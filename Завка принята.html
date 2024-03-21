@@ -1,0 +1,108 @@
+<html>
+    <head>
+<style>
+    body{
+        background-image: url(4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+            /*кнопка*/
+            button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 42px;
+	background: rgba(255, 255, 255, 0.719);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+button:hover:before {
+	width: 100%;
+}
+
+        .service-text {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .container {
+        max-width: 800px;
+        margin: 170px 70px;
+        padding: 30px;
+        background-color: #ffffff;
+        border-color: #000000;
+        border-radius: 100px;
+        box-shadow: 100px rgba(0, 0, 0, 0.1);
+        border: 4px groove black; /* Параметры границы */
+ }
+h2{
+color: #4c86c4;
+ font-size: 50px;
+ margin: 25px 40px;
+text-align: left;
+position: relative;
+left: 250px;
+
+    
+}
+ /* Тема 1: Светлая */
+ .theme-light {
+ background-color: #fff;
+ color: #333;
+}
+.theme-light button,
+.theme-light a {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #0056b3;
+ }
+ .service-text p, ul {
+            color: #000000;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        h1{
+            color: #20538a;
+           
+        }
+</style>
+    </head>
+    <body>
+<section id="services">
+    <div class="container">
+        <!-- Содержимое раздела услуг -->
+        <div class="service-text">
+            <h2>Butterfly</h2>
+            <h1>Ваша заявка принята!</h1><br>
+            <h3>За день до процедуры мы свяжемся с вами. </h3>
+            <div  style="margin: 15px; text-align: center;">
+                <a href="O салоне.html"><button>О салоне</button></a>
+                <a href="Услуги.html"> <button>Услуги</button></a>
+                <a href="главная.html"><button>Главная</button></a>
+                <a href="Контакты.html"><button>Контакты</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

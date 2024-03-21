@@ -1,0 +1,132 @@
+
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 50px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px solid #ccc;
+        }
+        
+        label {
+            font-weight: bold;
+            color: #0c0c0c;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #797474;
+            border-radius: 11px;
+            box-sizing: border-box;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        button {
+            background-color: #d5e223;
+            color: #fff;
+            padding: 15px 32px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #ff6347;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        .service-text {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .service-text a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        .kn{
+            background-color: #7bb3bd;
+            color: #fff;
+            padding: 15px 32px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+<h2>Запись в салон на наращивание ресниц</h2>
+
+<div class="container">
+    <form action="/submit_form" method="post">
+        <label for="first_name">Имя*:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br>
+        
+        <label for="last_name">Фамилия:</label><br>
+        <input type="text" id="last_name" name="last_name" ><br>
+        
+        <label for="email">Электронная почта*:</label><br>
+        <input type="text" id="email" name="email" required><br>
+        
+        <label for="phone">Телефон*:</label><br>
+        <input type="text" id="phone" name="phone" required><br>
+        
+        <label for="appointment_date">Дата записи*:</label><br>
+        <input style="width: 100%; padding: 15px; margin: 15px 0; border: 1px solid #797474; border-radius: 11px; box-sizing: border-box;" type="date" id="appointment_date" name="appointment_date" required><br>
+        
+        <label for="message">Дополнительная информация:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    </form>
+</div>
+<div>
+    <a href="Завка принята.html"><button type="submit">Записаться</button></a>
+
+</div>
+
+<nav class="kn">
+    <a href="главная.html"><button>Главная</button></a>
+    <a href="о салоне 2.0.html"><button>О салоне</button></a>
+    <a href="Контакты.html"><button>Контакты</button></a>
+    <a href="Онлайн запись.html"><button>Онлайн запись</button></a>
+</nav>
+
+</body>
+</html>

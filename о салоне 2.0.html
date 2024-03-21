@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон наращивания ресниц</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(90deg, rgb(154, 189, 192) 0%, rgb(113, 176, 185) 35%, rgb(145, 189, 196) 100%);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px 150px;
+      padding: 20px;
+      background: linear-gradient(90deg, rgb(56, 57, 58) 0%, rgb(20, 22, 22) 35%, rgb(55, 56, 56) 100%);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      
+    }
+    h1 {
+      font-size: 36px;
+      color: #3399ff;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    .advantages {
+      margin-bottom: 30px;
+      background-color: #e6f7ff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .advantages h2 {
+      font-size: 24px;
+      color: #3399ff;
+      margin-bottom: 10px;
+    }
+    .advantages ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .master-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .master {
+      width: 48%;
+      padding: 15px;
+      background-color: #e6f7ff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .master h3 {
+      font-size: 24px;
+      color: #3399ff;
+      margin-bottom: 10px;
+    }
+    .master p {
+      margin-bottom: 10px;
+    }
+    .plitca {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .tile {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.1);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    .modal-content:hover {
+      cursor: pointer;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 42px;
+	background: rgba(255, 255, 255, 0.719);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+button:hover:before {
+	width: 100%;
+}
+
+.service-text {
+ margin-bottom: 20px;
+ line-height: 1.5;
+        }
+        .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-color: #000000;
+        border-radius: 100px;
+        box-shadow: 100px rgba(0, 0, 0, 0.1);
+        border: 4px groove black; /* Параметры границы */
+ }
+  </style>
+</head>
+<body>
+  <div class="container" style= "text-align: center;">
+    <h1>Добро пожаловать в салон наращивания ресниц!</h1>
+
+    <div class="advantages">
+      <h2>Наши преимущества:</h2>
+      <ul>
+        <li>Профессиональные услуги наращивания ресниц.</li>
+        <li>Индивидуальный подход к каждому клиенту.</li>
+        <li>Использование качественных материалов и инновационных методов.</li>
+        <li>Уютная атмосфера и комфортное пространство для процедур.</li>
+      </ul>
+    </div>
+
+    <div class="master-container">
+      <div class="master">
+        <h3>Арина</h3>
+        <p>Опыт работы: 5 лет.</p>
+        <p>Квалификация: высокая.</p>
+        <p>Способности: виртуозное владение техниками наращивания ресниц.</p>
+      </div>
+
+      <div class="master">
+        <h3>Миранда</h3>
+        <p>Опыт работы: 8 лет.</p>
+        <p>Квалификация: эксперт.</p>
+        <p>Способности: уникальный стиль и подход к созданию индивидуальных образов.</p>
+      </div>
+    </div>
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+  <script>
+    function openModal(img) {
+      var modal = document.getElementById("modal");
+      var modalImg = document.getElementById("modalImg");
+
+      modal.style.display = "block";
+      modalImg.src = img.style.backgroundImage
+      .slice(5, -2); // Получаем URL изображения
+    }
+    function closeModal() {
+      var modal = document.getElementById("modal");
+      modal.style.display = "none";
+    }
+  </script>
+
+<div class="plitca">
+  <div class="tile" style="background-image: url('https://p0.zoon.ru/preview/2wY5ITHYTUTbGWC8O-9Q9w/2250x1500x75/1/9/5/original_643937e024af76e871075eb6_64799dd0ea3b53.29171853.jpg');" onclick="openModal(this)"></div>
+  <div class="tile" style="background-image: url('https://p0.zoon.ru/preview/jIMcQ5FmmPOkE5sGe27bFg/2250x1500x75/1/e/c/original_643937e024af76e871075eb6_64799dd4818393.26294081.jpg');" onclick="openModal(this)"></div>
+  <div class="tile" style="background-image: url('https://p0.zoon.ru/preview/wTUmIIbuz9Gn3RXNmauBZA/2250x1500x75/1/8/e/original_643937e024af76e871075eb6_64799dd1d61a67.61892192.jpg');" onclick="openModal(this)"></div>
+  <div class="tile" style="background-image: url('https://p1.zoon.ru/preview/fUQpKA_eUeR7y1TlAtuHAg/2250x1500x75/1/2/2/original_643937e024af76e871075eb6_64799dceead1b6.23360482.jpg');" onclick="openModal(this)"></div>
+  <div class="tile" style="background-image: url('https://p1.zoon.ru/preview/7QiwBtSH7uThPLP8Zssn1g/2250x1500x75/1/1/1/original_643937e024af76e871075eb6_64799dd6e33638.09468102.jpg');" onclick="openModal(this)"></div>
+  <div class="tile" style="background-image: url('https://p1.zoon.ru/preview/VI95znIxf-ftuFcP0R9lEQ/2250x1500x75/1/f/4/original_643937e024af76e871075eb6_64799dd6771301.71581783.jpg');" onclick="openModal(this)"></div>
+</div>
+</div>
+
+<div style="margin: 15px; text-align: center;">
+  <a href="главная.html"><button>Главная</button></a>
+  <a href="Услуги.html"> <button>Услуги</button></a>
+  <a href="Контакты.html"><button>Контакты</button></a>        
+  <a href="Онлайн запись.html"><button>Онлайн-запись</button></a>
+  </div>
+
+</body>
+</html>

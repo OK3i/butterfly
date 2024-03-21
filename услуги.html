@@ -1,0 +1,148 @@
+<html>
+<head>
+    <title>Услуги по наращиванию ресниц</title>
+    <style>
+        /* Ваш CSS-код здесь */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, rgb(56, 57, 58) 0%, rgb(20, 22, 22) 35%, rgb(55, 56, 56) 100%);
+            color: #ddd;
+            font-family: Arial;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .service {
+            margin-bottom: 40px;
+        }
+         /* Стили для увеличения изображения при наведении мыши */
+         .image-container {
+            display: flex;
+            max-width: 100%;
+            overflow-x: hidden; /* Изначально скрываем горизонтальную прокрутку */
+        }
+        .image-container:hover {
+            overflow-x: auto; /* Показываем горизонтальную прокрутку при наведении мыши */
+        }
+        .image-container::-webkit-scrollbar {
+            height: 8px; /* Высота полосы прокрутки */
+            width: 8px; /* Ширина полосы прокрутки */
+        }
+        .image-container::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.5); /* Цвет полосы прокрутки */
+            border-radius: 4px; /* Скругление углов полосы прокрутки */
+        }
+        .image {
+            margin-right: 10px;
+            transition: transform 0.5s;
+            width: 200px; /* Изменяем размер фотографий */
+            height: auto; /* Автоматический расчет высоты */
+        }
+        .image:hover {
+            transform: scale(1.1);
+        }
+        .despersia{
+            background: linear-gradient(90deg, rgb(154, 189, 192) 0%, rgb(113, 176, 185) 35%, rgb(145, 189, 196) 100%);
+        }
+    /*кнопка*/
+button {
+    background-color: #000000; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 42px;
+	background: rgba(255, 255, 255, 0.719);
+	border-radius: 5px;
+	transition: all 2s ease;
+}
+button:hover:before {
+	width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header class ="despersia">
+        <h1>Услуги по наращиванию ресниц</h1>
+        <nav>
+            <a href="главная.html"><button>Главная</button></a>
+            <a href="о салоне 2.0.html"><button>О салоне</button></a>
+            <a href="Контакты.html"><button>Контакты</button></a>
+            <a href="Онлайн запись.html"><button>Онлайн запись</button></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="service">
+            <h2>Классическое наращивание ресниц</h2>
+            <p>Длительность: около 1,5-2 часов</p>
+            <p>Идеальное решение для придания объема и длины вашим ресницам. Каждая ресница будет аккуратно удлинена с использованием высококачественных материалов.</p>
+           
+        </div>
+        <div class="service">
+            <h2>2D/3D/5D объемное наращивание</h2>
+            <p>Длительность: 2-3 часа</p>
+            <p>Выберите объем, который соответствует вашим предпочтениям и стилю. Этот метод создает эффект объемных ресниц, делая ваш взгляд еще более выразительным.</p>
+        </div>
+        <div class="service">
+            <h2>Гибридное наращивание</h2>
+            <p>Длительность: около 2 часов</p>
+            <p>Идеальное сочетание классического наращивания и объемных ресниц. Позволяет достичь естественного, но при этом заметного увеличения объема.</p>
+        </div>
+        <div class="service">
+            <h2>Коррекция наращивания</h2>
+            <p>Рекомендуется каждые 2-3 недели</p>
+            <p>Удаление старых ресниц и добавление новых для поддержания идеального вида вашего наращивания.</p>
+        </div>
+    </div>
+    <section id="portfolio">
+        <div class="container">
+            <!-- Галерея работ -->
+            <p style="text-align: center;">Здесь представлены примеры наших работ по наращиванию ресниц.</p>
+            <div class="image-container">
+                <img class="image" src="https://i.pinimg.com/564x/3f/5f/9d/3f5f9d20eebde179e5d9950513d43d5e.jpg" alt="Portfolio Image 1">
+                <img class="image" src="https://i.pinimg.com/564x/90/44/2c/90442c32ad9b95225bd997c95815679d.jpg" alt="Portfolio Image 2">
+                <img class="image" src="https://i.pinimg.com/564x/03/81/16/038116f39aa356d0c70ca377115e10d3.jpg" alt="Portfolio Image 3">
+                <img class="image" src=" https://i.pinimg.com/564x/29/60/8c/29608c7782fd74413c7c21dd189ff965.jpg" alt="Portfolio Image 3">
+                <img class="image" src="https://i.pinimg.com/564x/af/46/1b/af461bfde8fa28de2ef5c8ef73e3e6ac.jpg" alt="Portfolio Image 2">
+                <img class="image" src="https://i.pinimg.com/564x/00/a6/b3/00a6b39e0e20ec09625b6acb551e3e0e.jpg" alt="Portfolio Image 2">
+                <!-- Добавьте больше изображений по вашему усмотрению -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
